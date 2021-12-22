@@ -1,6 +1,4 @@
-﻿using System;
-using DefaultNamespace.GameEvents;
-using TMPro;
+﻿using DefaultNamespace.GameEvents;
 using UnityEngine;
 
 namespace DefaultNamespace.Vars

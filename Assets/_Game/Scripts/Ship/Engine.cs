@@ -1,5 +1,6 @@
-using UnityEditor.VersionControl;
+using System;
 using UnityEngine;
+using UnityEngine.Rendering;
 using Variables;
 
 namespace Ship
@@ -9,24 +10,27 @@ namespace Ship
     {
         [SerializeField] private FloatVariable _throttlePower;
         [SerializeField] private FloatVariable _rotationPower;
-        
         [SerializeField] private float _throttlePowerSimple;
         [SerializeField] private float _rotationPowerSimple;
 
         private Rigidbody2D _rigidbody;
-        
+
+       
+
+
+        //Changed movement code to also include WASD
         private void FixedUpdate()
         {
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
             {
                 Throttle();
             }
         
-            if (Input.GetKey(KeyCode.LeftArrow))
+            if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
             {
                 SteerLeft();
             } 
-            else if (Input.GetKey(KeyCode.RightArrow))
+            else if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
             {
                 SteerRight();
             }

@@ -10,7 +10,7 @@ namespace Ship
         
         public void TakeDamage(int damage)
         { 
-            Debug.Log("Took some damage");
+            Debug.Log($"Took damage: {damage}");
             _health = Mathf.Max(MIN_HEALTH, _health - damage);
         }
     }

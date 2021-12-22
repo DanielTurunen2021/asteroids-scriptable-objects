@@ -1,7 +1,5 @@
-﻿using System;
-using DefaultNamespace.GameEvents;
+﻿using DefaultNamespace.GameEvents;
 using UnityEngine;
-using Random = System.Random;
 
 namespace DefaultNamespace
 {
