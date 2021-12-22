@@ -7,12 +7,24 @@ public class ScreenWrap : MonoBehaviour
    private Camera _camera;
    private Vector3 viewpos;
    
-   //public delegate void Del(Vector3 vector);
-   //public static event Del ScreenWrapEvent;
+   public delegate void Del(Vector3 vector);
+   public static event Del ScreenWrapEvent;
+
+
+   private void OnEnable()
+   {
+      ScreenWrapEvent += ScreenWrapMethod;
+   }
+
+   private void OnDisable()
+   {
+      ScreenWrapEvent -= ScreenWrapMethod;
+   }
+
 
    private void OnBecameInvisible()
    {
-      ScreenWrapMethod(playerTransform.position);
+      ScreenWrapEvent.Invoke(playerTransform.position);
    }
 
    private void Awake()
@@ -37,6 +49,5 @@ public class ScreenWrap : MonoBehaviour
          newposition.y = -newposition.y;
       }
       playerTransform.position = newposition;
-      //ScreenWrapEvent.Invoke(playerTransform.position);
    }
 }

@@ -15,7 +15,10 @@ namespace Ship
 
         private Rigidbody2D _rigidbody;
 
-       
+        private void OnBecameInvisible()
+        {
+            
+        }
 
 
         //Changed movement code to also include WASD

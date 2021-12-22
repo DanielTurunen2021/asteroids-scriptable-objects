@@ -20,6 +20,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/ShipVisibilityChecker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Assignment/Scripts/ExitScreenChecker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/82c503977c5347cf82f44677f633fcf613be00/cb/1ed867d2/SerializeField.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Assignment/Scripts/ScreenWrap.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -74,7 +75,7 @@
       <workItem from="1640167668666" duration="4015000" />
       <workItem from="1640172685535" duration="926000" />
       <workItem from="1640173691818" duration="1862000" />
-      <workItem from="1640175836987" duration="5994000" />
+      <workItem from="1640175836987" duration="8490000" />
     </task>
     <servers />
   </component>
